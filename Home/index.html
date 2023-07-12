@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Pommer Advocacia</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+    <a href="index.html">
+        <img src="Imagens/LogoEscuraPequena.png" alt="Sua Logo" width="200">
+    </a>
+    <nav>
+        <ul class="menu">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre-nos">Sobre Nós</a></li>
+            <li><a href="#escritorio">Nosso Escritório</a></li>
+            <li><a href="#areas-atuacao">Áreas de Atuação</a></li>
+            <li><a href="#agendar-consulta">Agendar Consulta</a></li>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#registrar"></a>Registrar</li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="inicio">
+
+    </section>
+    
+    <section id="sobre-nos">
+        <div class="container">
+            <div class="logo">
+                <img src="Imagens/LogoEscura.png" alt="Logo do Escritório">
+            </div>
+            <div class="content">
+                <h2>Sobre Nós</h2>
+                <p>Somos um escritório de advocacia dedicado a fornecer serviços jurídicos de alta qualidade para nossos clientes. Nossa equipe de advogados altamente experientes está comprometida em oferecer soluções eficazes e estratégias legais personalizadas para atender às necessidades individuais de cada cliente. Nosso objetivo é proteger os interesses de nossos clientes e garantir a defesa de seus direitos.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="escritorio">
+        <h2>Nosso Escritório</h2>
+        <div id="office-gallery">
+            <img src="Imagens/office1.jpg" alt="Escritório 1">
+            <img src="Imagens/office2.jpg" alt="Escritório 2">
+            <img src="Imagens/office3.jpg" alt="Escritório 3">
+            <img src="Imagens/office4.jpg" alt="Escritório 4">
+            <img src="Imagens/office5.jpg" alt="Escritório 5">
+        </div>
+    </section>
+    
+    <section id="areas-atuacao">
+        <h2>Nossas Áreas de Atuação</h2>
+        <div class="area-card">
+            <img src="Imagens/direito-civil.jpg" alt="Direito Civil">
+            <h3>Direito Civil</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat ex nec condimentum placerat.</p>
+        </div>
+        <div class="area-card">
+            <img src="Imagens/direito-trabalhista.jpg" alt="Direito Trabalhista">
+            <h3>Direito Trabalhista</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat ex nec condimentum placerat.</p>
+        </div>
+        <div class="area-card">
+            <img src="Imagens/direito-penal.jpg" alt="Direito Penal">
+            <h3>Direito Penal</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat ex nec condimentum placerat.</p>
+        </div>
+        <div class="area-card">
+            <img src="Imagens/direito-empresarial.jpg" alt="Direito Empresarial">
+            <h3>Direito Empresarial</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat ex nec condimentum placerat.</p>
+        </div>
+    </section>
+    
+    <section id="agendar-consulta">
+        <div id="appointment-form">
+            <h2>Agendar Consulta</h2>
+            <form>
+                <div class="form-group">
+                    <label for="date">Data:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <p id="weekend-message" style="display: none;">Desculpe, não atendemos em finais de semana.</p>
+                <div class="form-group">
+                    <label for="time">Horário:</label>
+                    <select id="time" name="time" required>
+                        <option value="">Selecione o horário</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="professional">Profissional:</label>
+                    <select id="professional" name="professional" required>
+                        <option value="">Selecione o profissional</option>
+                        <option value="João">Dr. Jackson Pommer</option>
+                        <option value="Maria">Dr. Paulo Dolla</option>
+                    </select>
+                </div>
+                <button id="submit-button" type="submit">Agendar</button>  
+            </form>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>Todos os direitos reservados©</p>
+    <p>Endereço: Rua General Osório, 1873 - Cascavel - PR</p>
+    <p>Telefone: (45) 99861-8236</p>
+    <p>CNPJ: 50.041.187/0001-40</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
