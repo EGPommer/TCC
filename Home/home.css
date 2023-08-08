@@ -1,0 +1,368 @@
+/* Estilos gerais */
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #fff; /* Branco */
+  color: #000; /* Preto */
+}
+
+main {
+  flex-grow: 1;
+}
+
+#header {
+  background-color: #d4af37; /* Dourado */
+  color: #fff; /* Branco */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para o rodapé */
+footer {
+  background-color: #f4f4f4;
+  color: #666; /* Alterado para uma tonalidade mais escura para melhor contraste */
+  padding: 10px;
+  text-align: center;
+  height: 200px;
+}
+
+/* Estilos para o efeito de hover nas caixas */
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: #D9D9D9;
+  border-radius: 8px;
+  margin: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.box:hover {
+  transform: scale(1.1);
+}
+
+/* Adicione este CSS para estilizar os ícones do rodapé */
+.social {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px 0;
+  justify-content: space-between;
+}
+
+.social-icons{
+  display: flex;
+  align-items: flex-start;
+}
+
+.profile-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinhar os ícones no canto esquerdo verticalmente */
+  margin-right: 20px; /* Espaçamento entre os perfis */
+}
+
+.profile-icons a {
+  margin-bottom: 5px; /* Espaçamento entre os ícones */
+}
+
+.profile-icons img {
+  width: 30px; /* Tamanho dos ícones */
+  height: auto;
+}
+
+/* Estilo para o mapa interativo do Google */
+#map-container {
+  width: 300px; /* Largura do container do mapa */
+  height: 200px; /* Altura do container do mapa */
+  float: right; /* Alinhar o container do mapa à direita */
+  margin-left: 0px; /* Adicionar um espaço à esquerda do container do mapa para separá-lo do conteúdo anterior */
+  margin-bottom: 0px; /* Adicionar um espaço abaixo do container do mapa para separá-lo do conteúdo abaixo */
+}
+
+#map {
+  width: 100%; /* Largura do mapa dentro do container */
+  height: 100%; /* Altura do mapa dentro do container */
+}
+
+
+/* Estilos para o cabeçalho */
+header {
+  background-color: #f4f4f4;
+  color: #000; /* Alterado para preto para melhor legibilidade */
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+header .logo {
+  margin-right: auto;
+}
+
+header .logo img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+header img {
+  max-width: 200px;
+  height: auto;
+  margin-right: 100px;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.menu a {
+  display: inline-block;
+  padding: 20px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #fff;
+  background-color: #373737;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+/* Estilos para a seção Sobre Nós */
+#sobre-nos {
+  padding: 40px 0;
+  text-align: center;
+  position: relative;
+  color: #000; /* Branco */
+  margin-top: 100px;
+}
+
+#sobre-nos::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(212, 175, 55, 0.5); /* Dourado com opacidade */
+}
+
+#sobre-nos .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1; /* Definimos z-index: 1; para que o conteúdo fique acima do pseudo-elemento */
+}
+
+#sobre-nos .logo img {
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+}
+
+#sobre-nos .content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#sobre-nos h2 {
+  margin-bottom: 20px;
+}
+
+#sobre-nos p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+/* Estilos para a seção Escritório */
+#escritorio {
+  padding: 40px 0;
+  text-align: center;
+}
+
+#escritorio h2 {
+  color: #000;
+  margin-bottom: 30px;
+}
+
+#office-gallery {
+  display: none; /* Oculta a galeria de imagens */
+}
+
+#office-video {
+  display: block; /* Exibe o vídeo */
+  max-width: 300px; /* Defina a largura máxima desejada para o vídeo */
+  margin: 0 auto; /* Centralize o vídeo horizontalmente na página */
+}
+
+#office-video video {
+  width: 100%;
+  border-radius: 5px;
+}
+
+
+/* Estilos para a seção Áreas de Atuação */
+#areas-atuacao .container {
+  text-align: center;
+}
+
+#areas-atuacao h2.section-title {
+  margin-bottom: 30px;
+}
+
+.area-cards-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.area-card {
+  width: 300px; /* Reduzimos um pouco o tamanho do card para evitar cortes de texto */
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px; /* Adicionamos um espaçamento interno para o conteúdo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  height: 420px; /* Aumentamos um pouco a altura para melhor acomodar o texto */
+  transition: box-shadow 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.area-card img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.area-card h3 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.area-card .area-description {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 15px;
+  flex-grow: 1; /* Faz o texto ocupar todo o espaço disponível no card */
+}
+
+/* Estilos para a seção Agendar Consulta */
+#agendar-consulta {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+}
+
+#appointment-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#appointment-form h2 {
+  margin-bottom: 20px;
+  color: #000;
+}
+
+#appointment-form .form-group {
+  margin-bottom: 20px;
+}
+
+#appointment-form label {
+  display: block;
+  text-align: center;
+  margin-bottom: 5px;
+  color: #666;
+  font-size: 14px;
+}
+
+#appointment-form input[type="date"],
+#appointment-form select {
+  font-family: 'Josefin Sans', sans-serif;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  border-radius: 0;
+  background-color: transparent;
+  color: #000;
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+#appointment-form input[type="date"]::placeholder,
+#appointment-form select::placeholder {
+  color: #999;
+}
+
+#appointment-form input[type="date"]:focus,
+#appointment-form select:focus {
+  outline: none;
+  border-color: #000;
+}
+
+#professional-image-container {
+  margin-top: 10px;
+  display: none;
+}
+
+#professional-image {
+  max-width: 100px;
+  height: auto;
+  border-radius: 5px;
+}
+
+#appointment-form button {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #d4af37;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  display: block; /* Adicionando esta propriedade para corrigir o deslocamento */
+  margin: 0 auto; /* Centralizando o botão */
+}
+
+#appointment-form button:hover {
+  background-color: #b89532;
+}
+
+@media screen and (max-width: 500px) {
+  #appointment-form {
+      max-width: 100%;
+  }
+}
+
